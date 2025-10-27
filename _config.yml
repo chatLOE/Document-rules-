@@ -2,8 +2,8 @@ title: "チームドキュメント"
 description: "GitHub Pages 用ドキュメントサイトの雛形"
 lang: ja
 theme: minima
-url: ""
-baseurl: ""
+url: "https://chatloe.github.io"
+baseurl: "/Document-rules-"
 permalink: pretty
 plugins:
   - jekyll-feed
