@@ -1,0 +1,19 @@
+---
+# Only the main Sass file needs front matter
+---
+
+@import "minima";
+
+/* カスタムスタイルの例 */
+.site-header {
+  background-color: #1f2937;
+}
+
+.site-title, .site-title:visited {
+  color: #f9fafb;
+}
+
+.page-content {
+  font-size: 16.5px;
+  line-height: 1.8;
+}

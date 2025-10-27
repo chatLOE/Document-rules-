@@ -1,0 +1,44 @@
+title: "チームドキュメント"
+description: "GitHub Pages 用ドキュメントサイトの雛形"
+lang: ja
+theme: minima
+url: ""
+baseurl: ""
+permalink: pretty
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+minima:
+  skin: auto
+  social_links:
+    - platform: github
+      user_url: https://github.com/your-organization
+
+header_pages:
+  - docs/overview.md
+  - docs/getting-started.md
+  - docs/faq.md
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: page
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+
+include:
+  - docs
+
+sass:
+  style: compressed
