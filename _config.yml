@@ -16,9 +16,7 @@ minima:
       user_url: https://github.com/your-organization
 
 header_pages:
-  - docs/overview.md
-  - docs/getting-started.md
-  - docs/faq.md
+  - docs/git.md
 
 markdown: kramdown
 kramdown:
