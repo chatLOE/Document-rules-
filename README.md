@@ -39,3 +39,25 @@
 - チームやプロジェクトに合わせて `title` や `description` などのメタ情報を `_config.yml` で更新してください。
 - ドキュメントページを増やす場合は `docs/` 配下に Markdown ファイルを追加し、`header_pages` に追記するとナビゲーションに反映されます。
 - SEO や SNS カード向けに `jekyll-seo-tag` の Front Matter を活用すると効果的です。
+
+## CI / GitHub Actions
+
+このリポジトリには、`main` ブランチへ push すると自動で Jekyll をビルドして GitHub Pages にデプロイする GitHub Actions ワークフローを追加しています。
+
+基本的な確認手順:
+
+1. 変更を commit & push してください。
+
+   ```bash
+   git add .
+   git commit -m "Update site content"
+   git push origin main
+   ```
+2. GitHub のリポジトリページで「Actions」タブを開き、ワークフローの実行状況を確認します（ビルド → deploy の順で進みます）。
+
+3. 成功すると GitHub Pages に公開されます。公開 URL はリポジトリの Settings > Pages で確認できます。
+
+備考:
+
+- ワークフローは Bundler のキャッシュを利用しているため、2 回目以降のビルドが速くなります。
+- カスタムドメイン（CNAME）を利用する場合は、リポジトリに `CNAME` ファイルを追加するか、Settings の Pages でドメインを設定してください。
